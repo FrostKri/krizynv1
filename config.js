@@ -15,10 +15,10 @@ gc1 = 'https://instagram.com/mhdfakri_'
 gc2 = 'https://www.youtube.com/c/HokenBeusz'
 gc3 = 'https://vt.tiktok.com/ZSeCJHbfA/'
 global.linkGC = ['https://chat.whatsapp.com/KTUF5TbtlWu4vOFnlDqCwg', ''] // ganti jadi group lu
-global.owner = ['62895328590064','6287753222306'] // Put your number here //owner eval
-global.kontak = ['62895328590064','6287753222306'] //Ketika ada yang ngetik #owner
+global.owner = ['62895328590064','62895327934887'] // Put your number here //owner eval
+global.kontak = ['62895328590064','62895327934887'] //Ketika ada yang ngetik #owner
 global.mods = ['0'] // Want some help?
-global.prems = ['62895328590064','6287753222306'] // Premium user has unlimited limit
+global.prems = ['62895328590064','62895327934887'] // Premium user has unlimited limit
 global.APIs = { // API Prefix
   // nama: 'https://website'
   hardianto: 'https://hardianto-chan.herokuapp.com',
@@ -62,7 +62,7 @@ namaig = 'GAK ADA :)'
 namagithub = 'GAK ADA :)'
 kasihcaption = `*Kalau udah dikasih, bilang apa?*`
 namakontak1 = 'ᴹᴿ𝙄𝙩𝙨𝙠𝙧𝙞 ×፝֟͜×'
-namakontak2 = 'ᵏʳⁱ𝘽𝙡𝙖𝙘𝙠𝙖𝙩𝘽𝙤𝙩𝙯៚'
+namakontak2 = '⃢᭄𝙆𝙧𝙞𝙯𝙮𝙣×͜×'
 
 //kasihcaption = `Kalau udah dikasih, bilang apa?`
 
@@ -71,9 +71,10 @@ global.packname = 'ᴹᴿ𝙄𝙩𝙨𝙠𝙧𝙞 ×፝֟͜×' // ganti aja
 global.author = 'ᴹᴿ𝙄𝙩𝙨𝙠𝙧𝙞 ×፝֟͜×' // ganti aja
 
 //yyy
-bc = 'ᵏʳⁱ𝘽𝙡𝙖𝙘𝙠𝙖𝙩𝘽𝙤𝙩𝙯៚ ' // Broadcast
-footer = '\ᵏʳⁱ𝘽𝙡𝙖𝙘𝙠𝙖𝙩𝘽𝙤𝙩𝙯៚ '
-namabot = 'ᵏʳⁱ𝘽𝙡𝙖𝙘𝙠𝙖𝙩𝘽𝙤𝙩𝙯៚ '
+'⃢᭄𝙆𝙧𝙞𝙯𝙮𝙣×͜×' // Broadcast
+footer = '⃢᭄𝙆𝙧𝙞𝙯𝙮𝙣×͜×' // Broadcast
+footer = '\⃢᭄𝙆𝙧𝙞𝙯𝙮𝙣×͜×'
+namabot = '⃢᭄𝙆𝙧𝙞𝙯𝙮𝙣×͜×'
 namalu = 'ᴹᴿ𝙄𝙩𝙨𝙠𝙧𝙞 ×፝֟͜×'
 
 
@@ -85,9 +86,9 @@ global.nsfw = 'Fitur NSFW Dimatikan\nKetik *!enable* *nsfw* untuk menggunakan fi
 global.eror = '❗Server ERROR!'
 
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
-global.watermark = 'ᵏʳⁱ𝘽𝙡𝙖𝙘𝙠𝙖𝙩𝘽𝙤𝙩𝙯៚' //change the watermark 
-global.image = 'https://telegra.ph/Gambarbot-02-12' //change the image
-global.thumbfoto = 'https://telegra.ph/Gambarbot-02-12'
+global.watermark = '⃢᭄𝙆𝙧𝙞𝙯𝙮𝙣×͜× ' //change the watermark 
+global.image = 'https://telegra.ph/Krizyn-02-26' //change the image
+global.thumbfoto = 'https://telegra.ph/Krizyn-02-26'
 
 // image
 global.bank = 'https://telegra.ph/file/d5ddf4cc627bb0e6bc420.jpg'
@@ -110,3 +111,5 @@ fs.watchFile(file, () => {
   delete require.cache[file]
   require(file)
 })
+
+  
