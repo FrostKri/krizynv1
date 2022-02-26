@@ -45,21 +45,21 @@ npm start
 ## FOR TERMUX USER 
 
 ```bash
-â€¢ termux-setup-storage
-â€¢ apt-get update
-â€¢ apt upgrade
-â€¢ apt update && apt upgrade
-â€¢ apt install git -y
-â€¢ apt install nodejs -y
-â€¢ apt install ffmpeg -y
-â€¢ apt install imagemagick -y
-â€¢ git clone https://github.com/Frostkri/krizyn
-â€¢ cd krizyn
-â€¢ bash install.sh
-â€¢ npm i cfonts
-â€¢ npm install
-â€¢ npm update
-â€¢ npm start
+•termux-setup-storage
+•apt-get update
+•apt upgrade
+•apt update && apt upgrade
+•apt install git -y
+•apt install nodejs -y
+•apt install ffmpeg -y
+•apt install imagemagick -y
+•git clone https://github.com/Frostkri/krizyn
+•cd krizyn
+•bash install.sh
+•npm i cfonts
+•npm install
+•npm update
+•npm start
 ```
 
 ## REQUIREMENTS
