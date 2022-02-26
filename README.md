@@ -1,5 +1,5 @@
 ![20220226_031131.jpg](https://user-images.githubusercontent.com/92458761/155840670-848b1313-1257-428b-87b3-0d35891e4dff.jpg)
-<h1 align="center">Allo mypren!👋‹ I'm Krizyn</h1>
+<h1 align="center">Allo mypren!👋, I'm Krizyn</h1>
 
 ## ```FOLLOW SOSIAL MEDIA ME```
 <p align="center">
