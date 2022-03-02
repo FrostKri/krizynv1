@@ -4,22 +4,19 @@ let fs = require('fs')
 let path = require('path')
 let fetch = require('node-fetch')
 let moment = require('moment-timezone')
-const chats = conn.chats.all()
-const groups = chats.filter(v => v.jid.endsWith('g.us'))
 const defaultMenu = {
   before: `
 ╭───◪ 〔 ${namabot} 〕 
 ⬡ ${ucapan()}
 ⬡ Allo mypren👋
 ╰────────⬣
-╭───◪ 〔 𝙄𝙉𝙁𝙊 𝙐𝙎𝙀𝙍 〕
-│⬡ User Name: %name
-│⬡ Tersisa: *%limit Limit*
-│⬡ Role: *%role*
-│⬡ Level: *%level (%exp / %maxexp)*
-│⬡ [%xp4levelup]
-│⬡ %totalexp XP secara Total
-╰────────────⬣
+╭───◪ 〔  𝙇 𝙄 𝙈 𝙄 𝙏  〕
+┃⬡ Tersisa *%limit Limit*
+┃⬡ Role *%role*
+┃⬡ Level *%level (%exp / %maxexp)* 
+┃⬡ [%xp4levelup]
+┃⬡ %totalexp XP secara Total
+╰────────⬣
 ╭───◪ 〔 𝙏𝙄𝙈𝙀 𝘼𝙉𝘿 𝘿𝘼𝙏𝙀 〕
 ┃⬡ Hari : *%week %weton* 
 ┃⬡ Tanggal : *%date*
@@ -27,26 +24,24 @@ const defaultMenu = {
 ┃⬡ Waktu: *%time*
 ╰────────⬣
 ╭───◪ 〔  𝘿𝘼𝙏𝘼𝘽𝘼𝙎𝙀  〕
-│⬡ Uptime: *%uptime (%muptime)*
-│⬡ Database: %rtotalreg dari %totalreg
-│⬡ Memory Used : *${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB*
+┃⬡ Uptime: *%uptime (%muptime)*
+┃⬡ Database: %rtotalreg dari %totalreg 
 ╰────────⬣
 
 ────֍ 〔 𝗙𝗜𝗧𝗨𝗥 𝗕𝗢𝗧 〕 ֍────
 
+`
 .trimStart(),
   header: '╭─֍ 〔 %category 〕 ֍─',
   body: '┃⬡ %cmd %islimit %isPremium',
   footer: '╰────────֍\n',
   footerText:'𝙆𝙧𝙞𝙯𝙮𝙣 ×͜×', 
   after: `${namabot}
-
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 	let bzz = fs.readFileSync('./vn/kri.mp3')
 	let bzz2 = fs.readFileSync('./vn/itskri.mp3')
-	let { anon, anticall, antispam, antitroli, backup, jadibot, groupOnly, nsfw } = global.db.data.settings[conn.user.jid]
     let totaljadibot = [...new Set([...global.conns.filter(conn => conn.user && conn.state !== 'close').map(conn => conn.user)])]
 
     let _uptime = process.uptime() * 1000
@@ -231,16 +226,17 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     if (teks == '404') {
 			return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
                     "listMessage":  {
-                        "title": `*${ucapan()}
-𝗔𝗹𝗹𝗼 𝗠𝘆𝗽𝗿𝗲𝗻👋,  ${name}*
+                        "title": `${ucapan()}
+𝗔𝗹𝗹𝗼 𝗠𝘆𝗽𝗿𝗲𝗻👋, ${name}`.trim(),
+          "description": `
 ╭━━〔 𝙎 𝙏 𝘼 𝙏 𝙐 𝙎 〕━֍
-┃⬡ Aktif selama ${uptime}
-┃⬡ Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
-┃⬡ *${Object.keys(global.db.data.users).length}* Pengguna
-┃⬡ *${totaljadibot.length}* Jadibot
-┃⬡ *${conn.blocklist.length}* Terblock
-┃⬡ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
-┃⬡ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
+┃⬣ Aktif selama *${uptime}*
+┃⬣ Baterai *${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}*
+┃⬣ *${Object.keys(global.db.data.users).length}* Pengguna
+┃⬣ *${totaljadibot.length}* Jadibot
+┃⬣ *${conn.blocklist.length}* Terblock
+┃⬣ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
+┃⬣ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
 ╰━━━━━━━━━━━━━━֍
 ╭━━〔 𝘼𝘾𝘾𝙊𝙐𝙉𝙏 𝙊𝙒𝙉𝙀𝙍 〕━֍
 ┃⬣ IG : instagram.com/mhdfakri_
@@ -248,16 +244,14 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 ┃⬣ TT : tiktok.com/@unfaedahkan
 ┃⬣ FB : facebook.com/mhdfakri1999
 ┃⬣ 𝘿𝙊𝙉'𝙏 𝙁𝙊𝙍𝙂𝙀𝙏 𝙏𝙊 𝙁𝙊𝙇𝙇𝙊𝙒𝙄𝙉𝙂!
-╰━━━━━━━━━━━━━━֍
-`.trim(),
-                        "description": `𝙆𝙧𝙞𝙯𝙮𝙣 ×͜×`.trim(),
-                        "footerText": "𝘑𝘪𝘬𝘢 𝘮𝘦𝘯𝘦𝘮𝘶𝘬𝘢𝘯 𝘣𝘶𝘨 𝘥𝘢𝘭𝘢𝘮 𝘱𝘦𝘯𝘨??𝘶𝘯𝘢𝘢𝘯\n𝘚𝘪𝘭𝘢𝘩𝘬𝘢𝘯 𝘭𝘢??𝘰𝘳𝘬𝘢𝘯 𝘰𝘳 𝘵𝘢𝘯𝘺𝘢𝘬𝘢𝘯 𝘬𝘦𝘱𝘢𝘥𝘢 𝙊𝙬𝙣𝙚𝙧",
+╰━━━━━━━━━━━━━━֍`.trim(),
+                        "footerText": "𝘑𝘪𝘬𝘢 𝘮𝘦𝘯𝘦𝘮𝘶𝘬𝘢𝘯 𝘣𝘶𝘨 𝘥𝘢𝘭𝘢𝘮 𝘱𝘦𝘯𝘨𝘨𝘶𝘯𝘢𝘢𝘯\n𝘚𝘪𝘭𝘢𝘩𝘬𝘢𝘯 𝘭𝘢𝘱𝘰𝘳𝘬𝘢𝘯 𝘰𝘳 𝘵𝘢𝘯𝘺𝘢𝘬𝘢𝘯 𝘬𝘦𝘱𝘢𝘥𝘢 𝙊𝙬𝙣𝙚𝙧",
                         "buttonText": "Klik Disini",
                         "listType": "SINGLE_SELECT",
                         "sections": [
                             {
-                           
-                                rows": [{
+                                
+                                "rows": [{
                                     "title": `[ ☇ ] ꜱ ᴇ ᴍ ᴜ ᴀ  ᴘ ᴇ ʀ ɪ ɴ ᴛ ᴀ ʜༀ`,
 									"description": "✓ 𝙈𝙚𝙢𝙗𝙚𝙧𝙞𝙠𝙖𝙣 𝙎𝙚𝙢𝙪𝙖 𝙁𝙞𝙩𝙪𝙧 𝘽𝙤𝙩ᴹᴿ𝙄𝙩𝙨𝙠𝙧𝙞 ×፝֟͜×",
 									"rowId": ".? all"
@@ -374,7 +368,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 									"description": "✓ 𝙈𝙚𝙣𝙪 𝙆𝙝𝙪𝙨𝙪𝙨 𝙊𝙬𝙣𝙚𝙧ᴹᴿ𝙄𝙩𝙨𝙠𝙧𝙞 ×፝֟͜×",
 									"rowId": ".? owner"
                                 }],
-                                "title": "⟣──────────────❲  ᗩᒪᒪ ᗰEᑎᑌ  ❳──────────────⟢"
+                                "title": "──────────────❲  ᗩᒪᒪ ᗰEᑎᑌ  ❳──────────────"
                             }, {
 								"rows": [{
                                     "title": "[ ☇ ] ꜱ ᴛ ᴀ ᴛ ᴜ ꜱ  ʙ ᴏ ᴛ",
@@ -405,7 +399,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                                     "description": "✓ 𝙏𝙚𝙧𝙞𝙢𝙖 𝙠𝙖𝙨𝙞𝙝 𝙗𝙖𝙣𝙮𝙖𝙠 𝙪𝙣𝙩𝙪𝙠 𝙪𝙨𝙚𝙧 𝙮𝙖𝙣𝙜 𝙩𝙚𝙡𝙖𝙝 𝙗𝙚𝙧𝙥𝙖𝙧𝙩𝙞𝙨𝙞𝙥𝙖𝙨𝙞 𝙙𝙖𝙡𝙖𝙢 𝙗𝙤𝙩",
                                     "rowId": ".tqto"
                                 }],
-                                "title": "⟣──────────────❲ ᑭEᑎᑌTᑌᑭ ❳──────────────⟢"
+                                "title": "──────────────❲ ᑭEᑎᑌTᑌᑭ ❳──────────────"
                             }
                         ], "contextInfo": 
 						{ "stanzaId": m.key.id,
@@ -493,7 +487,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    await conn.send3ButtonLoc(m.chat, await (await fetch (image) (fla + teks)).buffer(), text.trim(), `Creator by ᴹᴿ𝙄𝙩𝙨𝙠𝙧𝙞 ×፝֟͜× \nHari: ${week}\nTanggal: ${date}\nJangan Call/Vc Bot Geng`, 'Pemilik Bot', `${_p}owner`, 'Sewa Bot', `${_p}sewabot`, 'Rules', `${_p}rules`, m)
+    await conn.send3ButtonLoc(m.chat, await (await fetch(image)).buffer(), text.trim(), `Hari: ${week}\nTanggal: ${date}\n${uptime} by ᴹᴿ𝙄𝙩𝙨𝙠𝙧𝙞 ×፝֟͜× `, 'Pemilik Bot', `${_p}owner`, 'Sewa Bot', `${_p}sewabot`, 'Rules', `${_p}rules`, m)
    // await conn.send3ButtonLoc(m.chat, await (await fetch(`https://i.ibb.co/fH0hppT/mikey.jpg`)).buffer(), text.trim(), 'Recoded By Dawnfrosty', 'Pemilik Bot', '.owner', 'Donasi', '.donasi', 'Rules', '.rules', m)
     await conn.sendFile(m.chat, bzz, 'bzz.opus', null, m, true)
     await conn.sendFile(m.chat, bzz2, 'bzz2.opus', null, m, true)
@@ -536,4 +530,3 @@ function ucapan() {
   }
   return res
 }
- 
