@@ -1,16 +1,23 @@
 let fetch = require('node-fetch')
 let handler = async (m, { conn }) => conn.sendButtonLoc(m.chat, await (await fetch(thanks)).buffer(), `
-BIG THANKS TO
-
-• Allah swt
-• My ortu
-• Nurutomo
-• Xteam
-• AlyaaXzy 
-• BOTCAHX
-• Zeks
-• Penyedia Layanan API
-• Orang-orang yang Berdonasi
+╭◪ 〔 BIG THANKS TO 〕
+》Thank you to ALLAH Swt
+》Thank you to Nurutomo
+》Thank you to ariffb
+》Thank you to botstylee
+》Thank you to bochilgaming 
+》Thank you to benni ismael
+》Thank you to zerochanBot
+》Thank you to fernazer
+》Thank you to Zeks
+》Thank you to MikeBot Dev Team
+》Thank you to BOTCAHX
+》Thank you to AlyaaXzy
+》Thank you to xteam
+》Thank you to ALL Bot creator
+》Thank you to penyediq apikey
+》and Thanks you to support my Bot
+╰◪
 `.trim(), watermark, 'Back', '.menu')
 handler.help = ['Thanksto', 'tqto']
 handler.tags = ['main']
