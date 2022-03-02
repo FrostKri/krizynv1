@@ -42,7 +42,7 @@ let handler = async(m, { conn }) => {
 ║│ ❍ *YOUTUBE*               :
 ║│ youtube.com/c/HokenBeusz
 ║│ ❍ *TIKTOK*                   :
-║│ tiktok.com/unfaedahkan
+║│ tiktok.com/@unfaedahkan
 ║╰──────────────────
 ╠════════════════════════
 ║╭─────────────────
