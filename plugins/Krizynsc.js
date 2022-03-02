@@ -1,6 +1,6 @@
 let handler  = async (m, { conn, usedPrefix: _p }) => {
 ye = `@${m.sender.split`@`[0]}`
-let handler = async (m, { conn }) => conn.sendButtonLoc(m.chat, await (await fetch(image)).buffer(), `
+let handler = async (m, { conn }) => conn.sendButtonLoc(m.chat, await (await fetch(fla+teks)).buffer(), `
 let info = `Udah tahun 2022 ni, masih aja ngemis kak👻
 `.trim(), footer, 'menu', '.menu')
 
