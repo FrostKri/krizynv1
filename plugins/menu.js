@@ -229,7 +229,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                         "title": `${ucapan()}
 𝗔𝗹𝗹𝗼 𝗠𝘆𝗽𝗿𝗲𝗻👋, ${name}`.trim(),
           "description": `
-╭━━〔 𝙎 𝙏 𝘼 𝙏 𝙐 𝙎 〕━֍
+┏━━〔 𝙎 𝙏 𝘼 𝙏 𝙐 𝙎 〕━֍
 ┃⬣ Aktif selama *${uptime}*
 ┃⬣ Baterai *${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}*
 ┃⬣ *${Object.keys(global.db.data.users).length}* Pengguna
@@ -237,14 +237,14 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 ┃⬣ *${conn.blocklist.length}* Terblock
 ┃⬣ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
 ┃⬣ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
-╰━━━━━━━━━━━━━━֍
-╭━━〔 𝘼𝘾𝘾𝙊𝙐𝙉𝙏 𝙊𝙒𝙉𝙀𝙍 〕━֍
+┗━━━━━━━━━━━━━━֍
+┏━━〔 𝘼𝘾𝘾𝙊𝙐𝙉𝙏 𝙊𝙒𝙉𝙀𝙍 〕━֍
 ┃⬣ IG : instagram.com/mhdfakri_
 ┃⬣ YT : youtube.com/c/HokenBeusz
 ┃⬣ TT : tiktok.com/@unfaedahkan
 ┃⬣ FB : facebook.com/mhdfakri1999
 ┃⬣ 𝘿𝙊𝙉'𝙏 𝙁𝙊𝙍𝙂𝙀𝙏 𝙏𝙊 𝙁𝙊𝙇𝙇𝙊𝙒𝙄𝙉𝙂!
-╰━━━━━━━━━━━━━━֍`.trim(),
+┗━━━━━━━━━━━━━━֍`.trim(),
                         "footerText": "𝘑𝘪𝘬𝘢 𝘮𝘦𝘯𝘦𝘮𝘶𝘬𝘢𝘯 𝘣𝘶𝘨 𝘥𝘢𝘭𝘢𝘮 𝘱𝘦𝘯𝘨𝘨𝘶𝘯𝘢𝘢𝘯\n𝘚𝘪𝘭𝘢𝘩𝘬𝘢𝘯 𝘭𝘢𝘱𝘰𝘳𝘬𝘢𝘯 𝘰𝘳 𝘵𝘢𝘯𝘺𝘢𝘬𝘢𝘯 𝘬𝘦𝘱𝘢𝘥𝘢 𝙊𝙬𝙣𝙚𝙧",
                         "buttonText": "Klik Disini",
                         "listType": "SINGLE_SELECT",
@@ -487,7 +487,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    await conn.send3ButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), text.trim(), `Hari: ${week}\nTanggal: ${date}\n${uptime} by ᴹᴿ𝙄𝙩𝙨𝙠𝙧𝙞 ×፝֟͜× `, 'Pemilik Bot', `${_p}owner`, 'Sewa Bot', `${_p}sewabot`, 'Rules', `${_p}rules`, m)
+    await conn.send3ButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), text.trim(), `Creator by by ᴹᴿ𝙄𝙩𝙨𝙠𝙧𝙞 ×፝֟͜×\nRuntime: ${uptime}\nHari: ${week} Tanggal: ${date}\nJangan Call or Spam Bot!!! `, 'Pemilik Bot', `${_p}owner`, 'Sewa Bot', `${_p}sewabot`, 'Rules', `${_p}rules`, m)
    // await conn.send3ButtonLoc(m.chat, await (await fetch(`https://i.ibb.co/fH0hppT/mikey.jpg`)).buffer(), text.trim(), 'Recoded By Dawnfrosty', 'Pemilik Bot', '.owner', 'Donasi', '.donasi', 'Rules', '.rules', m)
     await conn.sendFile(m.chat, bzz, 'bzz.opus', null, m, true)
     await conn.sendFile(m.chat, bzz2, 'bzz2.opus', null, m, true)
