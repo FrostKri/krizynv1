@@ -13,7 +13,7 @@ let handler = async(m, { conn }) => {
 ║╭──❉ 〔 𝐕𝐈𝐀 𝐌𝐎𝐁𝐈𝐋𝐄 〕 ❉──────
 ║│➸ *DANA* : 081360482998
 ║│➸ *PULSA*: 081360482998
-║│➸ *GOPAY*: _*Minta Ke Owner*_
+║│➸ *GOPAY*: BELUM PAKAI
 ║╰─────────────────────
 ╰═══════════════════════
 `.trim()
@@ -21,10 +21,10 @@ let handler = async(m, { conn }) => {
         buttonText: 'List Harga',
         description: kamisato,
         sections:  [{title: "Silahkan di pilih", rows: [
-        {title: '𝟏 ᗷᑌᒪᗩᑎ', description: "Rp5.000\nSewa bot selama 1 bulan.", rowId:".masuk"},
-        {title: '𝟑 ᗷᑌᒪᗩᑎ', description: "Rp10.000\nSewa bot selama 3 bulan.", rowId:".masuk"},
-        {title: '𝟓 ᗷᑌᒪᗩᑎ', description: "Rp15.000\nSewa bot selama 5 bulan.", rowId:".masuk"},
-        {title: 'PERMANEN', description: "Rp20.000\ntanpa batasan waktu.", rowId:".masuk"},
+        {title: '𝟏 ᗷᑌᒪᗩᑎ', description: "Rp5.000\nSewa bot selama 1 bulan.", rowId:".owner"},
+        {title: '𝟑 ᗷᑌᒪᗩᑎ', description: "Rp10.000\nSewa bot selama 3 bulan.", rowId:".owner"},
+        {title: '𝟓 ᗷᑌᒪᗩᑎ', description: "Rp15.000\nSewa bot selama 5 bulan.", rowId:".owner"},
+        {title: 'PERMANEN', description: "Rp20.000\ntanpa batasan waktu.", rowId:".owner"},
         {title: 'OᗯᑎEᖇ', description: "Chat owner nya jika ada perlu.", rowId:".owner"},
         {title: 'ᖇᑌᒪES', description: "PERATURAN BOT", rowId:".rules"},
        ] }],
