@@ -85,7 +85,7 @@ global.rpg = 'Fitur Rpg Dimatikan\nKetik *!enable* *rpg* untuk menggunakan fitur
 global.nsfw = 'Fitur NSFW Dimatikan\nKetik *!enable* *nsfw* untuk menggunakan fitur ini!\n“Katakanlah kepada orang laki-laki yang beriman: Hendaklah mereka menahan pandanganya, dan memelihara kemaluannya; … Katakanlah kepada wanita yang beriman: Hendaklah mereka menahan pandangannya, dan kemaluannya, dan janganlah mereka Menampakkan perhiasannya, kecuali yang (biasa) nampak dari padany,” \n(TQS. Al-Nur [24]: 30-31).'
 global.eror = '❗𝙎𝙚𝙧𝙫𝙚𝙧 𝙀𝙧𝙧𝙤𝙧...'
 
-global.fla = 'https://www4.flamingtext.com/net-fu/dynamic.cgi?script=water-logo&text=KRIZYN&fontsize=100&fillTextType=1&fillTextPattern=Povray+T_Stone08&fillTextGradient=Golden&fillOutlineType=1&fillOutlinePattern=Wood+%232&fillOutline2Type=2&shadowType=1&shadowBlur=5&shadowGlowColor=%23000&shadowSelfXOffset=9'
+global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
 global.watermark = '𝙆𝙧𝙞𝙯𝙮𝙣×͜× ' //change the watermark 
 global.image = 'https://telegra.ph/Krizyn-02-26' //change the image
 global.thumbfoto = 'https://telegra.ph/Krizyn-02-26'
