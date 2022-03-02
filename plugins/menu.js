@@ -233,7 +233,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                     "listMessage":  {
                         "title": `*${ucapan()}
 𝗔𝗹𝗹𝗼 𝗠𝘆𝗽𝗿𝗲𝗻👋,  ${name}*
-┏━━〔 𝙎 𝙏 𝘼 𝙏 𝙐 𝙎 〕━֍
+╭━━〔 𝙎 𝙏 𝘼 𝙏 𝙐 𝙎 〕━֍
 ┃⬡ Aktif selama ${uptime}
 ┃⬡ Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
 ┃⬡ *${Object.keys(global.db.data.users).length}* Pengguna
@@ -241,14 +241,14 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 ┃⬡ *${conn.blocklist.length}* Terblock
 ┃⬡ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
 ┃⬡ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
-┗━━━━━━━━━━━━━━֍
-┏━━〔 𝘼𝘾𝘾𝙊𝙐𝙉𝙏 𝙊𝙒𝙉𝙀𝙍 〕━֍
+╰━━━━━━━━━━━━━━֍
+╭━━〔 𝘼𝘾𝘾𝙊𝙐𝙉𝙏 𝙊𝙒𝙉𝙀𝙍 〕━֍
 ┃⬣ IG : instagram.com/mhdfakri_
 ┃⬣ YT : youtube.com/c/HokenBeusz
 ┃⬣ TT : tiktok.com/@unfaedahkan
 ┃⬣ FB : facebook.com/mhdfakri1999
 ┃⬣ 𝘿𝙊𝙉'𝙏 𝙁𝙊𝙍𝙂𝙀𝙏 𝙏𝙊 𝙁𝙊𝙇𝙇𝙊𝙒𝙄𝙉𝙂!
-┗━━━━━━━━━━━━━━֍
+╰━━━━━━━━━━━━━━֍
 `.trim(),
                         "description": `𝙆𝙧𝙞𝙯𝙮𝙣 ×͜×`.trim(),
                         "footerText": "𝘑𝘪𝘬𝘢 𝘮𝘦𝘯𝘦𝘮𝘶𝘬𝘢𝘯 𝘣𝘶𝘨 𝘥𝘢𝘭𝘢𝘮 𝘱𝘦𝘯𝘨??𝘶𝘯𝘢𝘢𝘯\n𝘚𝘪𝘭𝘢𝘩𝘬𝘢𝘯 𝘭𝘢??𝘰𝘳𝘬𝘢𝘯 𝘰𝘳 𝘵𝘢𝘯𝘺𝘢𝘬𝘢𝘯 𝘬𝘦𝘱𝘢𝘥𝘢 𝙊𝙬𝙣𝙚𝙧",
