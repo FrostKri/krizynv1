@@ -1,5 +1,5 @@
 let fetch = require('node-fetch')
-let handler = async (m, { conn }) => conn.send2ButtonLoc(m.chat, await (await fetch(fla + 'Source code')).buffer(), `
+let handler = async (m, { conn }) => conn.send2ButtonLoc(m.chat, await (await fetch(fla + 'KRIZYN BOTz')).buffer(), `
 UDAH TAHUN 2022 NI, MASIH AJA NGEMIS NGEMIS👻
 -
 `.trim(), '© 𝙆𝙧𝙞𝙯𝙮𝙣×͜×', 'Thanks', '.tqto', 'Back','.menu')
