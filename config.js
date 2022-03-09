@@ -87,8 +87,8 @@ global.eror = '❗𝙎𝙚𝙧𝙫𝙚𝙧 𝙀𝙧𝙧𝙤𝙧...'
 
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
 global.watermark = '𝙆𝙧𝙞𝙯𝙮𝙣×͜× ' //change the watermark 
-global.image = 'https://telegra.ph/Krizyn-02-26' //change the image
-global.thumbfoto = 'https://telegra.ph/Krizyn-02-26'
+global.image = 'https://telegra.ph/file/79a7809aa11ce604c129c.jpg' //change the image
+global.thumbfoto = 'https://telegra.ph/file/79a7809aa11ce604c129c.jpg'
 
 // image
 global.bank = 'https://telegra.ph/file/d5ddf4cc627bb0e6bc420.jpg'
