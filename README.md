@@ -36,8 +36,8 @@ apt install git -y
 apt install nodejs -y
 apt install ffmpeg -y
 apt install imagemagick -y
-git clone https://github.com/frostkri/krizyn
-cd krizyn
+git clone https://github.com/frostkri/krizynv1
+cd krizynv1
 npm install
 npm start
 ```
@@ -53,8 +53,8 @@ npm start
 •apt install nodejs -y
 •apt install ffmpeg -y
 •apt install imagemagick -y
-•git clone https://github.com/Frostkri/krizyn
-•cd krizyn
+•git clone https://github.com/Frostkri/krizynv1
+•cd krizynv1
 •bash install.sh
 •npm i cfonts
 •npm install
