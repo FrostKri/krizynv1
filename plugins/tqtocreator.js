@@ -9,6 +9,7 @@ let handler = async (m, { conn }) => conn.sendButtonLoc(m.chat, await (await fet
 》Thank you to benni ismael
 》Thank you to zerochanBot
 》Thank you to fernazer
+》Thank ypi to Krizyn
 》Thank you to Zeks
 》Thank you to MikeBot Dev Team
 》Thank you to BOTCAHX
