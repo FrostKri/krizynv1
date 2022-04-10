@@ -8,9 +8,6 @@ youtube.com/c/hokenbeusz
 ➵͜͡✪ 𝙹𝚊𝚗𝚐𝚊𝚗 𝚕𝚞𝚙𝚊 𝚖𝚊𝚖𝚙𝚒𝚛
 https://lynk.id/kri.com
 `.trim(), ' 𝘋𝘰𝘯𝘵 𝘧𝘰𝘳𝘨𝘦𝘵 𝘵𝘰 𝘧𝘰𝘭𝘭𝘰𝘸 𝘮𝘺 𝘢𝘤𝘤𝘰𝘶𝘯𝘵', 'Thanks', '.tqto', 'Menu','.menu')
-handler.help = ['sourcecode']
--
-`.trim(), '© 𝙆𝙧𝙞𝙯𝙮𝙣×͜×', 'Thanks', '.tqto', 'Back','.menu')
 handler.help = ['sc krizyn']
 handler.tags = ['info']
 handler.command = /^(sourcecode|sc|scbot|script|github)$/i
