@@ -11,14 +11,14 @@
 // thank you to ALL Bot creator
 // and thanks you to who support my Bot
 
-gc1 = 'https://instagram.com/mhdfakri_'
-gc2 = 'https://www.youtube.com/c/HokenBeusz'
-gc3 = 'https://vt.tiktok.com/ZSeCJHbfA/'
-global.linkGC = ['https://chat.whatsapp.com/KTUF5TbtlWu4vOFnlDqCwg', ''] // ganti jadi group lu
-global.owner = ['62895328590064','62895327934887'] // Put your number here //owner eval
-global.kontak = ['62895328590064','62895327934887'] //Ketika ada yang ngetik #owner
+gc1 = 'https://instagram.com/anime.purwokerto_'
+gc2 = 'https://Bit.ly/3qCgkKv'
+gc3 = 'https://vt.tiktok.com/Riza.edt/'
+global.linkGC = ['Tidak ada awokawok 🗿', ''] // ganti jadi group lu
+global.owner = ['6281391883354','6281391883354'] // Put your number here //owner eval
+global.kontak = ['6281391883354','6281391883354'] //Ketika ada yang ngetik #owner
 global.mods = ['0'] // Want some help?
-global.prems = ['62895328590064','62895327934887'] // Premium user has unlimited limit
+global.prems = ['6281391883354','6281391883454'] // Premium user has unlimited limit
 global.APIs = { // API Prefix
   // nama: 'https://website'
   hardianto: 'https://hardianto-chan.herokuapp.com',
@@ -61,21 +61,21 @@ xteamkey = 'Dawnfrostkey'
 namaig = 'GAK ADA :)'
 namagithub = 'GAK ADA :)'
 kasihcaption = `*Kalau udah dikasih, bilang apa?*`
-namakontak1 = 'ᴹᴿ𝙄𝙩𝙨𝙠𝙧𝙞 ×፝֟͜×'
-namakontak2 = '𝙆𝙧𝙞𝙯𝙮𝙣×͜×'
+namakontak1 = 'ᴹᴿRiza ×፝֟͜×'
+namakontak2 = 'Riza×͜×'
 
 //kasihcaption = `Kalau udah dikasih, bilang apa?`
 
 // Sticker WM
-global.packname = 'ᴹᴿ𝙄𝙩𝙨𝙠𝙧𝙞 ×፝֟͜×' // ganti aja
-global.author = 'ᴹᴿ𝙄𝙩𝙨𝙠𝙧𝙞 ×፝֟͜×' // ganti aja
+global.packname = 'ᴹᴿRiza ×፝֟͜×' // ganti aja
+global.author = 'ᴹᴿRiza ×፝֟͜×' // ganti aja
 
 //yyy
 '𝙆𝙧𝙞𝙯𝙮𝙣×͜×' // Broadcast
-footer = '𝙆𝙧𝙞𝙯𝙮𝙣×͜×' // Broadcast
-footer = '\𝙆𝙧𝙞𝙯𝙮𝙣×͜×'
-namabot = '𝙆𝙧𝙞𝙯𝙮𝙣×͜×'
-namalu = 'ᴹᴿ𝙄𝙩𝙨𝙠𝙧𝙞 ×፝֟͜×'
+footer = 'Riza「XYZ」×͜×' // Broadcast
+footer = '\Riza×͜×'
+namabot = 'Riza×͜×'
+namalu = 'ᴹᴿ𝙄Kun ×፝֟͜×'
 
 
 // 
@@ -83,10 +83,10 @@ wait = '⏳𝙎𝙚𝙙𝙖𝙣𝙜 𝙙𝙞𝙥𝙧𝙤𝙨𝙚𝙨...'
 global.wait = '⏳𝙎𝙚𝙙𝙖𝙣𝙜 𝙙𝙞𝙥𝙧𝙤𝙨𝙚𝙨...'
 global.rpg = 'Fitur Rpg Dimatikan\nKetik *!enable* *rpg* untuk menggunakan fitur ini!\nKalo Mau main Disini aja\nhttps://chat.whatsapp.com/FnNAbem8o6r4pgLhSdO8Q9'
 global.nsfw = 'Fitur NSFW Dimatikan\nKetik *!enable* *nsfw* untuk menggunakan fitur ini!\n“Katakanlah kepada orang laki-laki yang beriman: Hendaklah mereka menahan pandanganya, dan memelihara kemaluannya; … Katakanlah kepada wanita yang beriman: Hendaklah mereka menahan pandangannya, dan kemaluannya, dan janganlah mereka Menampakkan perhiasannya, kecuali yang (biasa) nampak dari padany,” \n(TQS. Al-Nur [24]: 30-31).'
-global.eror = '❗𝙎𝙚𝙧𝙫𝙚𝙧 𝙀𝙧𝙧𝙤𝙧...'
+global.eror = '❗𝙎𝙚𝙧𝙫𝙚𝙧 𝙀𝙧𝙧𝙤𝙧 onichan...'
 
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
-global.watermark = '𝙆𝙧𝙞𝙯𝙮𝙣×͜× ' //change the watermark 
+global.watermark = 'Riza「XYZ」×͜× ' //change the watermark 
 global.image = 'https://telegra.ph/file/79a7809aa11ce604c129c.jpg' //change the image
 global.thumbfoto = 'https://telegra.ph/file/79a7809aa11ce604c129c.jpg'
 
